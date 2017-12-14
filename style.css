@@ -1,0 +1,42 @@
+#headline {
+	background-image:url(http://www.punmiris.com/himg/o.12452.jpg);
+	color:pink;
+	font-size: 120px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	text-shadow: 5px 10px 10px purple;
+	border: 10px dotted white;
+	border-radius: 100%;
+}
+body {
+	background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAbCb-FdLdbdpskNIsWaeN5ZRMuGUcT6GCR-pVj2ncKY2InwS94Q) no-repeat center center;
+}
+
+* {
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+div {
+	margin-left: 50px;
+}
+.words {
+	 font-size: 27px;
+
+
+}
+#about {
+	width: 200px;
+	margin: auto;
+}
+#linkedin, #learn {
+	text-decoration: none;
+}
+#linkedin:hover, #learn:hover {
+	text-decoration: underline;
+	color: pink;
+}
+label {
+	cursor: pointer;
+}

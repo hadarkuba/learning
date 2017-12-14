@@ -1,0 +1,182 @@
+* {
+  font-family: 'Indie Flower', cursive; 
+  box-sizing: border-box;
+  
+
+}
+header {
+  background: black/*#ff9999*/;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+ .body {
+  background: url(img/Raspberry1.jpg) no-repeat fixed right bottom; 
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  float:left;
+  padding: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#logo {
+  margin: 20px;
+  float:left;
+  display: flex;
+  font-size: 40px;
+
+}
+
+nav {
+  float: right;
+  padding: 10px;
+}
+
+#menu-icon {
+  background: url(img/menu.png) center;
+  background-size: cover;
+  display: hidden;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (max-width:640px) {
+  .body { 
+  background-size: 20%;
+  }
+  #slide {
+    width: 20%;
+    height: 15%;
+  }
+  header {
+    position: absolute;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #c5c5c5;
+    right: 10px;
+    top: 25px;
+    width: 20%;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+}
+#contactpage {
+  color: black /*#ff3333*/;
+  font-weight: bold;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black /*#ff4d4d*/;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: none;  
+  color: black; 
+  font-weight: bold; 
+  outline: none;
+
+}
+input:focus , textarea:focus {
+  border: 3px dotted black/*#ff4d4d*/;
+}
+input[type=submit] {
+  background-color: black /*#ff9999*/;
+  cursor: pointer;
+  color:white;
+}
+input[type=submit]:hover {
+  background-color: white /*#ff4d4d*/;
+  color: black /*delete if pink*/;
+}
+form {
+  border: 1px solid #d9dce0;
+  border-radius: 20px;
+  width: 50%;
+  padding: 20px;
+}
+
+h1, #slide {
+  margin-top: 100px;
+}
+#headline {
+  font-size: 75px;
+  color: black /*#ff3333*/;
+
+}
+button {
+  background-color: white /*#ff9999*/;
+  border: 2px solid black /*#ff4d4d*/;
+  border-radius: 20px;
+  color: black /*white*/;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height:45px;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  outline: none;
+
+}
+button:hover {
+  background-color: black /*white*/;
+  color:  white /*#ff4d4d*/;
+}
+
+
+#meal {
+  color: black /*#ff3333*/;
+  font-size:200%;
+  height: 45%;
+  width: 45%;
+  background-color: white;
+
+}
+
+#message {
+  color: black /*#ff3333*/;
+  font-size:200%;
+  height: 45%;
+  width: 45%;
+  background-color: white;
+}
+
+#slide {
+  float: right;
+}
+

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'underwood_champion';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/underwood_champion-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background: #ddd url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/launch-day-boom_copy.svg') center center no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104215/superhero-152840.png) right center no-repeat;
+  background-size: 25%;
+  width: 94vw;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: auto; 
+}
+h1, h2 {
+  font-family:'Underwood-Champion';
+  text-align:center;
+  color:#137d49;
+  font-weight:bold;
+  font-size: 2em;
+  margin-bottom:0;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 0 0 .5em 0
+}
+.panel {
+  width: 35vw;
+  color: #333;
+  background-color: #137d49;
+  border-color: #ddd;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+@media (max-width: 500px) {
+  body {background-size: 50%;background-position: 65vw 2vh}
+  .panel {width:80vw}
+  
+}
+
+.panel-heading {
+  background: #137d49;
+  color:#fff!important;
+  height: 2em;
+  font-weight:bold;
+  text-align: center;
+  padding: 10px 15px 0 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+input {
+  height: 1.6em;
+  padding: .4em .5em;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=checkbox] {
+    line-height:.5em;
+    margin: 4px 0 0 0;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #337ab7;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #337ab7;
+}
