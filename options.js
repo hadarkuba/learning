@@ -82,17 +82,28 @@ function Shake() {
 	"Dragonfruit", "Durian", "Feijoa", "Figs", "Goji berries", "Grapes", "Raisins", "Grapefruit", "Guava", "Jackfruit", "Jujube", "Kiwano",
 	"Kiwifruit","Kumquat", "Loquat", "Lychee", "Mango", "Melon", "Cantaloupe", "Honeydew", "Watermelon", "Miracle fruit", "Mulberries",
 	"Nectarine", "Orange", "Blood orange", "Clementine", "Mandarine", "Tangerine", "Papaya", "Passionfruit", "Peach", "Pear", "Persimmon",
-	"Plum", "Prune", "Pineapple", "Pomegranate", "Pomelo", "Quince", "Raspberries", "Redcurrant", "Star fruit", "Strawberry", "Chestnut",
+	"Plum", "Prune", "Pineapple", "Pomegranate", "Pomelo", "Quince", "Raspberries", "Redcurrant", "Star fruit", "Strawberry", 
 	"Broccoli", "Cauliflower", "Celery", "Cucumber", "Carrot"];	
 	var liquid = ["Soy Milk", "Almond Milk", "Oat Milk", "Rice Milk", "Coconut Milk", "Orange Juice", "Vegan Yogurt", "Green Tea",
 	"Apple Juice", "Sparkling Water" ];
 	var sweetener = ["Agave Nectar", "Date Honey", "Stevia", "Sugar", "Brown Sugar", "Coconut Sugar", "Blackstrap Molasses", "Maple Syrup", 
 	"Brown Rice Syrup", "Real Fruit Jam"];
-	var optional = ["Mint", "Arugula", "Kale", "Lettuce", "Butterhead Lettuce", "Iceberg Lettuce", "Romaine Lettuce", "Spinach",
-	"Peanuts", "Chia seeds", "Flaxseeds", "Hemp seeds", "Poppy seeds", "Pumpkin seeds", "Sesame seeds", "Sunflower seeds",
+	var side = ["Mint", "Arugula", "Kale", "Lettuce", "Butterhead Lettuce", "Iceberg Lettuce", "Romaine Lettuce", "Spinach",
+	"Peanuts", "Chia seeds", "Flaxseeds", "Hemp seeds", "Poppy seeds", "Pumpkin seeds", "Sesame seeds", "Sunflower seeds", "Chestnut",
 	"Almonds", "Brazil Nuts", "Cashew Nuts", "Hazelnuts", "Macadamia Nuts", "Pecans", "Pine Nuts", "Pistachio Nuts", "Tiger Nuts", "Walnuts",
 	"Ginger", "Lemon Juice", "Oats", "Almond Butter", "Cashew Butter", "Peanut Butter", "Tahini", "Cacao Powder", "Vanilla Extract", "Cinnamon" ];
-//ice cubes
+
+	var fruit1 = fruit[Math.round(Math.random()*(fruit.length-1))];
+	var fruit2 = fruit[Math.round(Math.random()*(fruit.length-1))];
+	var fruit3 = fruit[Math.round(Math.random()*(fruit.length-1))];
+	var base = liquid[Math.round(Math.random()*(liquid.length-1))];
+	var sweet = sweetener[Math.round(Math.random()*(sweetener.length-1))];
+	var optional = side[Math.round(Math.random()*(side.length-1))];
+
+	document.getElementById("meal").innerHTML = "<div>Mix " + base + " with " + fruit1 + ", " + fruit2 + " and " + fruit3 +
+	"<br> add a little bit of " + sweet + " and " + optional + "<br>and don't forget the ice cubes.</div>"
+
+
 }
 
 var i = 0;
