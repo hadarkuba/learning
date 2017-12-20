@@ -144,7 +144,7 @@ button {
   color: black /*white*/;
   text-align: center;
   display: inline-block;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
   width: 200px;
   height:45px;
   font-size: 20px;
