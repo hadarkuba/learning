@@ -137,9 +137,17 @@ var myForm = document.forms.myForm;
 
 var message = document.getElementById("message");
 myForm.onsubmit = function() {
-if (myForm.name.value == "") {
-		message.innerHTML = "Please enter your name";
-		myForm.name.focus();
+if (myForm.name.value.length < 2) {
+	message.innerHTML = "Please enter your name";
+	myForm.name.focus();
+	return false;
+} else {
+	message.innerHTML = "";
+	//return true;
+	}
+if (myForm.email.value == "") {
+	message.innerHTML = "Please enter your E-mail address";
+	myForm.email.focus();
 		return false;
 	} else {
 		message.innerHTML = "";

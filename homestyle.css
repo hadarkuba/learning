@@ -108,6 +108,7 @@ input, textarea {
   color: black; 
   font-weight: bold; 
   outline: none;
+  transition-duration: 0.4s;
 
 }
 input:focus , textarea:focus {
@@ -170,7 +171,7 @@ button:hover {
 
 #message {
   color: black /*#ff3333*/;
-  font-size:200%;
+  font-size:100%;
   height: 45%;
   width: 45%;
   background-color: white;
