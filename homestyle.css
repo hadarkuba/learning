@@ -58,7 +58,7 @@ nav {
   width: 32px;
   height: 32px;
 }
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:600px) {
   .body { 
   background-size: 20%;
   }
