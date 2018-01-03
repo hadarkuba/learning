@@ -106,6 +106,39 @@ function Shake() {
 
 }
 
+function Sandwich() {
+	var breads = ["Whole Wheat Bread", "Rye Bread", "Pumpernickel Bread", "Ezekiel Bread", "Flaxseed Bread", "Oat Bread",
+	"Multigrain Bread", "Brown Rice Bread", " Sourdough Bread", "Whole Wheat Pita", "Whole Wheat Tortilla", "Whole Grain Walnut Bread", 
+	"Corn Tortilla", "Whole Wheat Baguette", "Whole Wheat Bagel", "Whole Wheat Ciabatta Bread", "Whole Wheat Bun",
+	"Whole Grain Garlic Bread", "Whole Grain Onion Bread", "Spelt Bread"];
+	var spreads = ["Roasted Peppers Spread", "Dried Tomatoes Spread", "Olives Tapenade", "Tahini", "Hummus", "Mashed Avocado",
+	"Mustard", "Vegan Mayonnaise", "Dijon Mustard", "Pesto", "Garlic Spread", "Red Lentils Spread", "Lima Beans Spread",
+	"Edamame Spread", "Tofu Cheese", "Cashew Cream Cheese", "Walnut Spread", "Almond Feta Cheese", "Peanut Butter", "Vegan Paté",
+	"Baba Ganoush", "Guacamole", "Almond Butter", "Olive Spread", "Chutney", "Chimichurri", "Red Beans Spread", "Black Bean Spread",
+	"Cashew Butter"];
+	var vegetable = ["Artichoke", "Arugula", "Asparagus", "Bamboo Shoots", "Bean Sprouts", "Beet", "Bell Pepper",
+	"Bok Choy", "Broccoli", "Brussels Sprouts", "Cabbage", "Capers", "Carrot", "Celery", "Celery Root", "Celtuce", 
+	"Chinese Broccoli (kai-lan)", "Cherry Tomatos", "Baby Corn", "Cucumber", "Radish", "Endive", "Fennel", "Grape Leaves", "Beet Greens", 
+	"Collard Greens", "Kale", "Kohlrabi Greens", "Swiss Chard", "Turnip Greens", "Hearts of Palm", "Jerusalem Artichoke", "Kohlrabi",
+	"Leeks", "Lettuce", "Butterhead Lettuce", "Iceberg Lettuce", "Romaine Lettuce", "Mushrooms", "Olive", "Onion", "Red Onion", "Green Onions",
+	"Parsley", "Parsley Root", "Parsnip", "Radicchio", "Radish", "Shallots", "Spinach", "Tomato", "Turnip", "Watercress", "Zucchini",
+	"Basil", "Chevril", "Chives", "Coriander", "Dill", "Lovage", "Mint", "Oregano", "Marjoram", "Tarragon", "Tyme", "Parsley"];
+	var mains = [ "Vegan Shawarma", "Vegan burger", "Vegan Hotdog", "Vegan Pattie", "Marinated Baked Tofu", "Scrambled Tofu",
+	"Chickpea Flour Omelet", "Grilled Portabella Mushroom", "Baked Potato", "Baked Sweet Potato", " Baked Butternut Squash",
+	"Baked Acorn Squash", "Potato Salad", "Baked Eggplant", "Baked Falafel", "Chickpea Salad", "Bean Salad", " Quinoa Meatballs",
+	 "Grilled Eggplant", "Antipasti", "Baked Cauliflower", "Grilled Cauliflower"];
+
+	 var bread = breads[Math.round(Math.random()*(breads.length-1))];
+	 var spread = spreads[Math.round(Math.random()*(spreads.length-1))];
+	 var veg1 = vegetable[Math.round(Math.random()*(vegetable.length-1))];
+	 var veg2 = vegetable[Math.round(Math.random()*(vegetable.length-1))];
+	 var main = mains[Math.round(Math.random()*(mains.length-1))];
+
+	 document.getElementById("meal").innerHTML = "<div>Spread some " + spread + " on a " + bread + ",<br>fill it with " +
+	  veg1 + ", " + veg2 + "<br> and " + main + ".</div>"
+
+}
+
 var i = 0;
 var img = [];
 var time = 2000;
