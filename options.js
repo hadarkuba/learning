@@ -1,3 +1,5 @@
+
+
 function Meal() {
 	var vegetable = [ "Artichoke", "Arugula", "Asparagus", "Bamboo Shoots", "Bean Sprouts", "Beet", "Bell Pepper",
 	"Bok Choy", "Broccoli", "Brussels Sprouts", "Cabbage", "Capers", "Carrot", "Cauliflower", "Celery", "Celery Root", "Celtuce", 
@@ -122,8 +124,8 @@ function Sandwich() {
 	"Collard Greens", "Kale", "Kohlrabi Greens", "Swiss Chard", "Turnip Greens", "Hearts of Palm", "Jerusalem Artichoke", "Kohlrabi",
 	"Leeks", "Lettuce", "Butterhead Lettuce", "Iceberg Lettuce", "Romaine Lettuce", "Mushrooms", "Olive", "Onion", "Red Onion", "Green Onions",
 	"Parsley", "Parsley Root", "Parsnip", "Radicchio", "Radish", "Shallots", "Spinach", "Tomato", "Turnip", "Watercress", "Zucchini",
-	"Basil", "Chevril", "Chives", "Coriander", "Dill", "Lovage", "Mint", "Oregano", "Marjoram", "Tarragon", "Tyme", "Parsley"];
-	var mains = [ "Vegan Shawarma", "Vegan burger", "Vegan Hotdog", "Vegan Pattie", "Marinated Baked Tofu", "Scrambled Tofu",
+	"Basil", "Chevril", "Chives", "Coriander", "Dill", "Mint", "Oregano", "Tarragon", "Tyme", "Parsley"];
+	var mains = [ "Vegan Shawarma", "Vegan burger", "Vegan Carrot Hotdog", "Vegan Pattie", "Marinated Baked Tofu", "Scrambled Tofu",
 	"Chickpea Flour Omelet", "Grilled Portabella Mushroom", "Baked Potato", "Baked Sweet Potato", " Baked Butternut Squash",
 	"Baked Acorn Squash", "Potato Salad", "Baked Eggplant", "Baked Falafel", "Chickpea Salad", "Bean Salad", " Quinoa Meatballs",
 	 "Grilled Eggplant", "Antipasti", "Baked Cauliflower", "Grilled Cauliflower"];
@@ -132,10 +134,11 @@ function Sandwich() {
 	 var spread = spreads[Math.round(Math.random()*(spreads.length-1))];
 	 var veg1 = vegetable[Math.round(Math.random()*(vegetable.length-1))];
 	 var veg2 = vegetable[Math.round(Math.random()*(vegetable.length-1))];
+	 var veg3 = vegetable[Math.round(Math.random()*(vegetable.length-1))];
 	 var main = mains[Math.round(Math.random()*(mains.length-1))];
 
 	 document.getElementById("meal").innerHTML = "<div>Spread some " + spread + " on a " + bread + ",<br>fill it with " +
-	  veg1 + ", " + veg2 + "<br> and " + main + ".</div>"
+	  veg1 + ", " + veg2 + ", " + veg3 + "<br> and " + main + ".</div>"
 
 }
 
@@ -188,7 +191,5 @@ if (myForm.email.value == "") {
 	}
 	
 };
-
-	
 
 
