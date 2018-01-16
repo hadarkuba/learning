@@ -1,5 +1,3 @@
-
-
 function Meal() {
 	var vegetable = [ "Artichoke", "Arugula", "Asparagus", "Bamboo Shoots", "Bean Sprouts", "Beet", "Bell Pepper",
 	"Bok Choy", "Broccoli", "Brussels Sprouts", "Cabbage", "Capers", "Carrot", "Cauliflower", "Celery", "Celery Root", "Celtuce", 
@@ -191,5 +189,6 @@ if (myForm.email.value == "") {
 	}
 	
 };
+
 
 
