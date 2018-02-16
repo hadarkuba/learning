@@ -18,11 +18,11 @@ header {
   background: url(img/Raspberry1.jpg) no-repeat fixed right bottom; 
 }
 
-ul {
+#nav-bar {
   list-style: none;
 }
 
-li {
+#nav-bar li {
   display: inline-block;
   float:left;
   padding: 15px;
@@ -130,7 +130,7 @@ form {
   padding: 20px;
 }
 
-h1, #slide {
+h1, #slide, #about {
   margin-top: 100px;
 }
 #headline {
@@ -179,5 +179,39 @@ button:hover {
 
 #slide {
   float: right;
+}
+#about ul {
+  margin: 0;
+  padding: 0;
+}
+#about ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 20px 1px 0px 1px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+#about ul li:hover {
+  background:black;
+  color:white;
+} 
+#about ul li.active {
+  background:black;
+  color:white;
+} 
+#about .panel{
+  display: none;
+  background: white;
+  border: 2px solid #d9dce0; 
+  border-radius: 20px;
+  padding: 30px;   
+  width: 45%;
+}
+#about .panel.active{
+  display: block;
 }
 

@@ -1,3 +1,17 @@
+$(function(){
+	$("#about ul li").on("click", function(){
+		$("#about ul li.active").removeClass("active");
+		$(this).addClass("active");
+		var panelToShow=$(this).attr("rel");
+		$("#about .panel.active").slideUp(300, function(){
+			$(this).removeClass("active");
+			$("#"+panelToShow).slideDown(300, function(){
+				$(this).addClass("active");
+			});
+		});
+	});
+});
+
 function Meal() {
 	var vegetable = [ "Artichoke", "Arugula", "Asparagus", "Bamboo Shoots", "Bean Sprouts", "Beet", "Bell Pepper",
 	"Bok Choy", "Broccoli", "Brussels Sprouts", "Cabbage", "Capers", "Carrot", "Cauliflower", "Celery", "Celery Root", "Celtuce", 
@@ -188,7 +202,9 @@ if (myForm.email.value == "") {
 		return true;
 	}
 	
-};
+}
+
+
 
 
 

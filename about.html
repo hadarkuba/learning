@@ -13,7 +13,7 @@
     <a href="#" id="logo"><img src="img/saladiconw.png" alt="salad bowl" height="70px" width="96px">Mealy</a>
     <nav>
       <a href="#" id="menu-icon"></a>
-      <ul>
+      <ul id="nav-bar">
         <li><a href="home.html"> Home</a></li>
         <li><a href="about.html"> About</a></li>
         <li><a href="contact.html"> Contact</a></li>
@@ -22,6 +22,27 @@
     </header>
     <img id = "slide" name="slide" width="600" height="450">
     <div id= "about">
+      <ul class="tab">
+        <li rel="meals" class="active">meals</li>
+        <li rel="salads">salads</li>
+        <li rel="shakes">shakes</li>
+        <li rel="sandwiches">sandwiches</li>
+      </ul>
+
+    
+      <div id="meals" class="panel active">
+        something about the meals 
+      </div>
+      <div id="salads" class="panel">
+        something about the salads
+      </div>
+      <div id="shakes" class="panel">
+        something about the shakes
+      </div>
+      <div id="sandwiches" class="panel">
+        something about the sandwiches
+      </div>
+
       
     </div>
     <script src="jquery-3.2.1.js"></script>
